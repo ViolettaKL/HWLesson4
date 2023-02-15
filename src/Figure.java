@@ -24,7 +24,7 @@ public class Figure {
 
     public void surfaceArea() {
         int s = 2*(height * width + height * length + width * length);
-        System.out.println(s);
+        System.out.println("Figure surface area:" + s);
     }
 
 }

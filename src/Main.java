@@ -4,7 +4,7 @@ public class Main {
 
         int volumeFigure;
         volumeFigure = figure.giveMeVolume();
-        System.out.println(volumeFigure);
+        System.out.println("Figure Volume:" + volumeFigure);
 
         figure.surfaceArea();
 
@@ -12,7 +12,16 @@ public class Main {
         Client client2 = new Client("Kate",6550.5,424  );
         Client client3 = new Client("Mari",15000.2,425  );
 
-        String there = client1.there();
+        client1.printPersonalInfo();
+        client2.printPersonalInfo();
+        client3.printPersonalInfo();
+
+        String tereString = Client.returnThere();
+        System.out.println("Please, print me There: " + tereString);
+
+        double a = 12.0, b = 3.0;
+        double dif = Client.returnDif(a, b);
+        System.out.println("Please, print me difference between " + a + " and " + b + ": " + dif);
 
     }
 }
