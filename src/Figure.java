@@ -4,10 +4,10 @@ public class Figure {
     int length;
 
     //method passes height, width, length
-    public Figure(int height, int width, int length) {
-    this.height = height;
-    this.width = width;
-    this.length = length;
+    public Figure(int height, int width, int length ) {
+        this.height = height;
+        this.width = width;
+        this.length = length;
     }
 
     // default method
@@ -15,10 +15,16 @@ public class Figure {
 
     }
 
+
     // figure volume calculation
-    public int giveMeVolume(int height, int width, int length) {
+    public int giveMeVolume() {
         return height * width * length;
 
+    }
+
+    public void surfaceArea() {
+        int s = 2*(height * width + height * length + width * length);
+        System.out.println(s);
     }
 
 }
